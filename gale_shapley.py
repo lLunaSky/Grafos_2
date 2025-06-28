@@ -2,7 +2,7 @@ from proj_alum import alunos, projetos, participantes_projeto
 from collections import defaultdict #Para manipular dicionarios de forma mais tranquila
 """Aqui usaremos o Gale-Shapley eu decidi usar como se os alunos fossem os homens que pedem as mãos das mulheres, e elas serem os projetos pq faz mais sentindo na lógica que alunos podem escolher mais de um projeto. Esse algoritmo é uma base, eh preciso que sejam selecionados o sprojeto e ver se a nota dos alunos é sulficiente e se ha vagas. Mas esse algoritmo faz uma seleção. Poemos construir o resto a partir dele."""
 
-def asignacao(alunos, projetos, participantes_projeto):#teste
+def asignacao(alunos, projetos, participantes_projeto):
     alunos_livres = list(alunos.keys())
 
     for aluno in alunos_livres:
